@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/HausCloud/printf
+	branch = master
+	commit = 810174365feb75147736f05727534c5bd4e544b9
+	parent = bfca432e5a910f7b12720660c5db6ca9ed99415f
+	method = merge
+	cmdver = 0.4.1

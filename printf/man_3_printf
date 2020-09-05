@@ -1,0 +1,12 @@
+.\" Manpage for proto printf function.
+.TH man 3 "19 March 2019" "1.0" "proto printf man page"
+.SH NAME
+proto printf \- print to stdout
+.SH EXAMPLE
+_printf("Hello, World"); OR _print("Hello %s\n", World);
+.SH DESCRIPTION
+proto printf is a stripped down version of printf. Format specifiers taken are limited to %c, %s, %i, %d, and %%.
+.SH BUGS
+Counter is not adding up correctly.
+.SH AUTHOR
+Wolf Hopkins & Anthony Le
