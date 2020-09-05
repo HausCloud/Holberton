@@ -1,6 +1,6 @@
-[submodule "Hopeful-Cosmos"]
-	path = Hopeful-Cosmos
-	url = https://github.com/HausCloud/Hopeful-Cosmos
 [submodule "C-Shell"]
 	path = C-Shell
 	url = https://github.com/HausCloud/C-Shell
+[submodule "Hopeful-Cosmos"]
+	path = Hopeful-Cosmos
+	url = https://github.com/HausCloud/Hopeful-Cosmos
