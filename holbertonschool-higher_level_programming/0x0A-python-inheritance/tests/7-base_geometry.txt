@@ -1,0 +1,7 @@
+>>> BClass = __import__('7-base_geometry').BaseGeometry
+>>> bg = BClass
+>>> bg.integer_validator("what", "the", 7037)
+>>> bg.integer_validator("heh", "some_string", 93)
+>>> bg.integer_validator("?", "?", [1, 2, 3])
+Traceback (most recent call last):
+TypeError: ? must be an integer

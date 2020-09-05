@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/HausCloud/holbertonschool-higher_level_programming
+	branch = master
+	commit = 30f0abcdffb96e695185e5cca587fb5cc93c07de
+	parent = cc32c633373c16b943f3df029231aa245861818a
+	method = merge
+	cmdver = 0.4.1

@@ -1,0 +1,26 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("Hi. My. Name. Is. Anthony?")
+Hi.
+<BLANKLINE>
+My.
+<BLANKLINE>
+Name.
+<BLANKLINE>
+Is.
+<BLANKLINE>
+Anthony?
+<BLANKLINE>
+>>> text_indentation("Colon: Period. Question Mark?")
+Colon:
+<BLANKLINE>
+Period.
+<BLANKLINE>
+Question Mark?
+<BLANKLINE>
+>>> text_indentation(4231)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation([1, 2, 3])
+Traceback (most recent call last):
+TypeError: text must be a string
