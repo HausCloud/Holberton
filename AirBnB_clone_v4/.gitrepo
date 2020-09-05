@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:HausCloud/AirBnB_clone_v4.git
+	branch = master
+	commit = e95d514f033888424272588aa5d47ede3a306268
+	parent = 6e2d6a7a7b2b661d71673e953202b25550aab3f8
+	method = merge
+	cmdver = 0.4.1
