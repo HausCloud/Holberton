@@ -1,0 +1,12 @@
+#include "holberton.h"
+
+/**
+ *
+ *
+ *
+ *
+ */
+
+function
+{
+}
