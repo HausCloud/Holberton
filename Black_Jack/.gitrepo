@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:HausCloud/Black_Jack.git
+	branch = master
+	commit = f5b7b561c0f25829cb468b0fea584c2e5d68453c
+	parent = 745e6da8dd083fd19e36860cebf14380f7229d1a
+	method = merge
+	cmdver = 0.4.1
