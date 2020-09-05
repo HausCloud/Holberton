@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Create an index.html file
+apt-get -y update
+apt-get -y install nginx
+if [ ! -d "/var/www" ]; then mkdir /var/www; fi
+if [ ! -d "/var/www/html" ]; then mkdir /var/www/html; fi
+if [ ! -f "/var/www/html/index.html" ]; then touch /var/www/html/index.html; fi
+if [ -f "/var/www/html/index.html" ]; then echo 'Holberton School' > /var/www/html/index.html; fi
+service nginx restart

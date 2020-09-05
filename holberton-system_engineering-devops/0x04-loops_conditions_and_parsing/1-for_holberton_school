@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Print to stdout Holberton School 10 times using a bash script for loop
+OG='Holberton School'
+for _ in {1..10}; do echo "$OG"; done

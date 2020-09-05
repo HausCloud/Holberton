@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Checks for file exists
+test -a holbertonschool
+FE=`echo $?`
+if [ $FE -eq 0 ]; then echo 'holbertonschool file exists'; else echo 'holbertonschool file does not exist'; fi
+empty=`cat holbertonschool | wc -m`
+test -f holbertonschool
+FF=`echo $?`
+if [ $FF -eq 0 ] && [ $empty -eq 0 ]; then echo 'holbertonschool file is empty'; fi
+if [ $FF -eq 0 ] && [ $empty -ne 0 ]; then echo 'holbertonschool file is not empty'; fi
+if [ $FF -eq 0 ]; then echo 'holbertonschool is a regular file'; fi

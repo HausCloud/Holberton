@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Set up webserver
+apt -y update
+apt -y install nginx
+host=$(hostname)
+customhttp="http {\n\n\tadd_header X-Served-By $host;\n\n"
+sed -i "s,http {,$customhttp," /etc/nginx/nginx.conf
+service nginx reload
+service nginx restart

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Print to stdout Holberton School 10x, but add Hi on the 9th iteration using a bash script
+c=1
+OG='Holberton School'
+hi='Hi'
+while [ $c -le 10 ]; do echo "$OG"; if [ $c -eq 9 ]; then echo "$hi"; fi; ((c++)); done

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Prints to stdout Holberton School 10 times, except in the 4th and 8th iteration. Bad luck on the 4th and good luck on the 8th.
+c=1
+OG='Holberton School'
+bl='bad luck'
+gl='good luck'
+while [ $c -le 10 ]; do if [ $c -eq 4 ]; then echo "$bl"; elif [ $c -eq 8 ]; then echo "$gl"; else echo "$OG"; fi; ((c++)); done

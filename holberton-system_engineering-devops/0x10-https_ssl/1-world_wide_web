@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Prints information about subdomains
+
+function1 () {
+    if [ $# -eq 2 ]
+    then
+    	declare -a str_array=('www' 'lb-01' 'web-01' 'web-02')
+    	for sub in "${str_array[@]}"
+    	do
+    	    section_line=$(dig "$sub"."$2" | grep -A1 'ANSWER SECTION:' | tail -1)
+    	    sub_domain=$(echo "$section_line" | awk '{ print $1 }' | cut -d '.' -f 1)
+    	    record=$(echo "$section_line" | awk '{ print $4 }')
+    	    ip=$(echo "$section_line" | awk '{ print $5 }')
+    	    echo "The subdomain $sub_domain is a $record record and points to $ip"
+    	done
+    fi
+    if [ $# -eq 3 ]
+    then
+    	section_line=$(dig "$3"."$2" | grep -A1 'ANSWER SECTION:' | tail -1)
+    	sub_domain=$(echo "$section_line" | awk '{ print $1 }' | cut -d '.' -f 1)
+    	record=$(echo "$section_line" | awk '{ print $4 }')
+    	ip=$(echo "$section_line" | awk '{ print $5 }')
+    	echo "The subdomain $sub_domain is a $record record and points to $ip"
+    fi
+}
+
+function1 "$#" "$@"

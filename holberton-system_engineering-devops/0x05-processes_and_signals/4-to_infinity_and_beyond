@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Print "To infinity and beyond" infinitely
+c=1
+while [ $c -lt 2 ]; do echo 'To infinity and beyond'; sleep 2; done

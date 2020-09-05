@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# does stuff
+cp /etc/hosts ~/hosts.new
+addy=$(grep -oP '(.+?)(?=\slocalhost)' /etc/hosts | cat)
+sed -i "s/$addy/127.0.0.2/g" ~/hosts.new
+addy=$(grep -oP '(.+?)(?=\sfacebook.com)' /etc/hosts | cat)
+sed -i "s/$addy/8.8.8.8/g" ~/hosts.new
+cp -f ~/hosts.new /etc/hosts

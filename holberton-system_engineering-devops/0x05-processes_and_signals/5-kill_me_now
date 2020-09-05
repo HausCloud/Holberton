@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Kill another process
+# ps aux | grep 4-to_infinity_and_beyond | head -1 | cut -d " " -f 3  IS JUST AS COOL
+kill "$(pgrep -f 4-to_infinity_and_beyond)"

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Print to stdout Holberton School 10 times using bash script while loop
+c=1
+OG='Holberton School'
+while [ $c -le 10 ]; do echo "$OG" ; ((c++)); done

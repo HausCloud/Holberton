@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# Display time to 12:59
+finalhour=1
+minute=1
+x=1
+
+while [ $finalhour -le 13 ]
+do
+  if [ $x -eq 1 ]
+  then
+      echo "Hour: 0"
+  fi
+  x=0
+  while [ $minute -lt 60 ]
+  do
+    if [ $minute -lt 60 ]
+    then
+      echo "$minute"
+    fi
+    ((minute++))
+  done
+  if [ $minute -eq 60 ] && [ $finalhour -ne 13 ]
+  then
+    echo "Hour: $finalhour"
+    ((finalhour++))
+    minute=1
+  else
+    break
+  fi
+done

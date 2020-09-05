@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Print to std 1 - 10, and different stuff on 4th, 9th, and 17th iteration
+c=1
+plastic='bad luck from China'
+weebcentral='bad luck from Japan'
+pasta='bad luck from Italy'
+
+while [ $c -le 20 ]
+do case $c in
+5)
+echo "$plastic"
+echo "$c"
+;;
+10)
+echo "$weebcentral"
+echo "$c"
+;;
+18)
+echo "$pasta"
+echo "$c"
+;;
+*)
+echo "$c"
+;;
+esac
+  ((c++))
+done

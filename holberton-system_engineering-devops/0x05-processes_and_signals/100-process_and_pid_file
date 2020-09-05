@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Do a lot of stuff
+c=1
+sudo touch /var/run/holbertonscript.pid
+sudo bash -c "echo $$ > /var/run/holbertonscript.pid"
+trap 'echo "I am invincible!!!"' SIGTERM
+trap 'echo "Y U no love me?!"' SIGINT
+while [ $c -lt 2 ]; do echo 'To infinity and beyond'; sleep 2; done

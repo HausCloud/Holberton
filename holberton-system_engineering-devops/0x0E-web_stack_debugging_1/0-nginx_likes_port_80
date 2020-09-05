@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Fix webstack
+var=$(netstat -tulpn | grep -Poe '\d+(?=/nginx)')
+#pid=$(echo "$var" | grep -Poe '\d+(?=\s)')
+string1="listen 80 default_server;"
+string2="listen [::]:80 default_server ipv6only=on;"
+sed -ri "s,listen 8080 default_server;,$string1," /etc/nginx/sites-enabled/default
+sed -ri "s,listen \[::]:8080.+;,$string2," /etc/nginx/sites-enabled/default
+kill -2 "$var"
+service nginx restart
